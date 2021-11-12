@@ -33,7 +33,10 @@ export default class Index extends React.Component {
       .catch((error) => alert(error));
   };
 
-  testError = undefined;
+  testError = () => {
+    const error = "";
+    error.push(1);
+  };
 
   render() {
     return (

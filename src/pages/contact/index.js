@@ -34,8 +34,8 @@ export default class Index extends React.Component {
   };
 
   testError = () => {
-    const error = "";
-    error.push(1);
+    const error = {};
+    console.log(error.bomb);
   };
 
   render() {

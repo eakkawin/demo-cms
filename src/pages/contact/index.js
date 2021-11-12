@@ -33,6 +33,8 @@ export default class Index extends React.Component {
       .catch((error) => alert(error));
   };
 
+  testError = undefined;
+
   render() {
     return (
       <Layout>
@@ -109,7 +111,7 @@ export default class Index extends React.Component {
                   <button
                     className="button is-link"
                     type="button"
-                    onClick={testError}
+                    onClick={this.testError}
                   >
                     Error is coming
                   </button>
